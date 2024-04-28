@@ -1,0 +1,2 @@
+# RussianRoulette
+Russian Roulette bash
